@@ -1,40 +1,40 @@
-📌 RunnerQA Bot – Automated Game Testing System (Unity + C#)
-🎮 Project Overview
+# 📌 RunnerQA Bot – Automated Game Testing System (Unity + C#)
 
-RunnerQA Bot is an automated gameplay testing system built in Unity.
-It simulates Quality Assurance processes used in real game studios by:
+## 🎮 Project Overview
 
-Automatically playing a simple 3D runner game
+**RunnerQA Bot** is an automated gameplay testing system built in Unity.  
+It simulates real **Quality Assurance (QA)** processes used in game studios by:
 
-Detecting obstacles using raycasts
+- Automatically playing a simple 3D runner game  
+- Detecting obstacles using raycasts  
+- Jumping at accurate timings  
+- Tracking FPS and performance  
+- Detecting timeouts and softlocks  
+- Logging gameplay metrics  
+- Exporting structured CSV test reports  
+- Restarting test runs without human input  
 
-Jumping at the correct time
+This project demonstrates **automation, bug detection, data logging, and QA workflows**, all of which are key skills for a **Quality Analyst Intern at EA**.
 
-Tracking FPS and performance
+---
 
-Detecting timeouts and softlocks
+## 🧠 Features
 
-Logging gameplay metrics
+- Fully automated test cycles  
+- Predictive obstacle detection using raycasts  
+- Automatic jump logic  
+- Collision and break-state detection  
+- Timeout & softlock detection  
+- FPS monitoring and average FPS calculation  
+- CSV logging to `persistentDataPath`  
+- Configurable number of runs  
+- Clean modular C# code architecture  
 
-Exporting CSV test reports
+---
 
-Restarting the game without human input
+## 🗂 Project Structure
 
-This project demonstrates automation, bug detection, data logging, and QA workflows, all of which are key requirements for a Quality Analyst Intern at EA.
-
-🧠 Features
-
-✔ Fully automated test cycles
-✔ Predictive obstacle detection via raycasts
-✔ Automatic jumping logic
-✔ Collision/break-state detection
-✔ Timeout/softlock detection
-✔ FPS monitoring and average FPS calculation
-✔ CSV logging to persistentDataPath
-✔ Configurable number of runs
-✔ Modular scripts with clean architecture
-
-🗂 Project Structure
+```
 Assets/
   Scripts/
     Player/
@@ -46,26 +46,61 @@ Assets/
       Logger.cs
     TestingBot/
       TestingBot.cs
+
   Prefabs/
     Obstacle.prefab
+
   Scenes/
     RunnerScene.unity
+```
 
-📊 Sample CSV Output
+---
+
+## 📊 Sample CSV Output
+
+```
 Run, Jumps, Collisions, Duration, AvgFPS
 1, 3, 1, 2.35, 74.88
 2, 4, 0, 3.12, 76.20
+```
 
-🧪 How to Run Tests
+This data helps analyze:
+- Bot accuracy  
+- Collision frequency  
+- Performance stability  
+- Run duration  
 
-Open RunnerScene.unity
+---
 
-Press Play
+## 🧪 How to Run the Automated Tests
 
-Watch the bot:
+1. Open the scene:  
+   `Assets → Scenes → RunnerScene.unity`
 
-Play the game
+2. Press **Play** in the Unity Editor.
 
-Jump automatically
+3. The TestingBot will automatically:
+   - Play the game  
+   - Jump over obstacles  
+   - Restart after each run  
+   - Generate CSV logs  
 
-Restart after each run
+---
+
+## 🛠 Technologies Used
+
+- Unity (3D Core)
+- C#
+- Unity Physics & Raycasting
+- Unity Coroutines
+- CSV File Logging
+
+---
+
+## 👤 Author
+
+**Teegala Sreekanth**  
+Email: ryker034@gmail.com  
+
+---
+
